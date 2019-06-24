@@ -1,2 +1,27 @@
 @import './variables';
 @import './mixins';
+
+.description {
+    .displayFlex(center);
+    img {
+        width: 500px;
+    }
+
+    .descript-text {
+        width: 300px;
+    }
+
+    .testBorder();
+}
+
+.nomore {
+    .displayFlex(center, center, row-reverse);
+    img {
+        width: 500px;
+    }
+    .nomore-text {
+        width: 300px;
+    }
+    
+    .testBorder();
+}

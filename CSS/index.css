@@ -1,0 +1,26 @@
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border: 2px solid blue;
+}
+.description img {
+  width: 500px;
+}
+.description .descript-text {
+  width: 300px;
+}
+.nomore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  border: 2px solid blue;
+}
+.nomore img {
+  width: 500px;
+}
+.nomore .nomore-text {
+  width: 300px;
+}
