@@ -141,7 +141,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Indie Flower", cursive;
+  font-family: 'Crete Round', serif;
 }
 h1 {
   font-size: 4rem;
@@ -163,10 +163,29 @@ p {
   width: 950px;
   margin: 0 auto;
 }
-.wrapper {
-  width: 950px;
-  margin: 0 auto;
-  box-sizing: border-box;
+.tab-navigator .tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.tab-navigator .tabs .link {
+  padding: 10px 40px;
+  background: #DCEDB9;
+}
+.tab-navigator .tabs .link-highlight {
+  color: white;
+}
+.tab-navigator .tab-content {
+  width: 100%;
+  background: #6CB043;
+}
+.tab-navigator .tab-content .content {
+  border: 1px solid #6CB043;
+  display: none;
+}
+.tab-navigator .tab-content .showup {
+  display: block;
 }
 .description {
   display: flex;
