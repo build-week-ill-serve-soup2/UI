@@ -1,8 +1,15 @@
 @import './variables';
 @import './mixins';
 
+
+.wrapper {
+    width: 950px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
 .description {
-    .displayFlex(center);
+    .displayFlex(space-around);
     img {
         width: 500px;
     }
@@ -15,7 +22,7 @@
 }
 
 .nomore {
-    .displayFlex(center, center, row-reverse);
+    .displayFlex(space-around, center, row-reverse);
     img {
         width: 500px;
     }
@@ -24,4 +31,16 @@
     }
     
     .testBorder();
+}
+
+.tab-navigator {
+    .tabs {
+        .displayFlex();
+
+        .link {
+            padding: 10px 40px;
+            background: @main;
+        }
+    }
+
 }
