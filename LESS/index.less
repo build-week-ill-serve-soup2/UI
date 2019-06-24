@@ -1,5 +1,6 @@
 @import './variables';
 @import './mixins';
+@import './Tabs/Tabs.less';
 
 
 .wrapper {
@@ -27,33 +28,4 @@
     .nomore-text {
         width: 300px;
     }
-}
-
-.tab-navigator {
-    .tabs {
-        .displayFlex(center);
-
-        .link {
-            padding: 10px 40px;
-            background: @accentgreen;
-        }
-
-        .link-highlight {
-            color: white;
-        }
-    }
-
-   .tab-content {
-       width: 100%;
-       background: @accentgreen;
-
-       .content {
-           border: 1px solid @main;
-           display: none;
-       }
-
-       .showup {
-           display: block;
-       }
-   }
 }

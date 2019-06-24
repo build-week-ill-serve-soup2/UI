@@ -27,27 +27,3 @@
 .nomore .nomore-text {
   width: 300px;
 }
-.tab-navigator .tabs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-.tab-navigator .tabs .link {
-  padding: 10px 40px;
-  background: #DCEDB9;
-}
-.tab-navigator .tabs .link-highlight {
-  color: white;
-}
-.tab-navigator .tab-content {
-  width: 100%;
-  background: #DCEDB9;
-}
-.tab-navigator .tab-content .content {
-  border: 1px solid #6CB043;
-  display: none;
-}
-.tab-navigator .tab-content .showup {
-  display: block;
-}
