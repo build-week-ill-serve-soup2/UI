@@ -17,8 +17,6 @@
     .descript-text {
         width: 300px;
     }
-
-    .testBorder();
 }
 
 .nomore {
@@ -29,18 +27,33 @@
     .nomore-text {
         width: 300px;
     }
-    
-    .testBorder();
 }
 
 .tab-navigator {
     .tabs {
-        .displayFlex();
+        .displayFlex(center);
 
         .link {
             padding: 10px 40px;
-            background: @main;
+            background: @accentgreen;
+        }
+
+        .link-highlight {
+            color: white;
         }
     }
 
+   .tab-content {
+       width: 100%;
+       background: @accentgreen;
+
+       .content {
+           border: 1px solid @main;
+           display: none;
+       }
+
+       .showup {
+           display: block;
+       }
+   }
 }
