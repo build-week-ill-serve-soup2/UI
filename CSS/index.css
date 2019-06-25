@@ -423,3 +423,32 @@ footer p {
   font-size: 1rem;
   text-align: right;
 }
+.aboutmainimg {
+  margin: 20px 0;
+}
+.aboutmainimg img {
+  width: 100%;
+  object-fit: cover;
+  height: 400px;
+}
+.about-team {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.about-team .member {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+  flex-direction: row;
+}
+.about-team .member img {
+  width: 400px;
+}
+.about-team .member p {
+  width: 400px;
+  padding: 20px 0;
+}
