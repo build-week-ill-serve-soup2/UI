@@ -33,13 +33,6 @@
       flex-direction: row-reverse;
     }
 
-    @media @tablet {
-      .member-text {
-        margin: 0 30px;
-        width: 70%;
-      }
-    }
-
     @media @mobile {
       .displayFlex(space-around, center, column);
       &:nth-child(even) {
@@ -51,6 +44,20 @@
       }
 
     }
+
+    @media @tablet {
+      .member-text {
+        margin: 0 30px;
+        width: 70%;
+
+        @media @mobile {
+          margin: 0;
+          width: 100%;
+        }
+      }
+    }
+    }
+
 
     img {
       width: 350px;
@@ -81,4 +88,4 @@
       }
     }
   }
-}
+

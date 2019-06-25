@@ -477,12 +477,6 @@ footer p {
 .about-team .member:nth-child(even) {
   flex-direction: row-reverse;
 }
-@media (max-width: 800px) {
-  .about-team .member .member-text {
-    margin: 0 30px;
-    width: 70%;
-  }
-}
 @media (max-width: 500px) {
   .about-team .member {
     display: flex;
@@ -497,7 +491,19 @@ footer p {
     border-bottom: 2px solid #6CB043;
   }
 }
-.about-team .member img {
+@media (max-width: 800px) {
+  .about-team .member .member-text {
+    margin: 0 30px;
+    width: 70%;
+  }
+}
+@media (max-width: 800px) and (max-width: 500px) {
+  .about-team .member .member-text {
+    margin: 0;
+    width: 100%;
+  }
+}
+.about-team img {
   width: 350px;
   height: 250px;
   object-fit: cover;
@@ -505,24 +511,24 @@ footer p {
   border-radius: 50px;
 }
 @media (max-width: 800px) {
-  .about-team .member img {
+  .about-team img {
     width: 270px;
     height: 170px;
   }
 }
 @media (max-width: 500px) {
-  .about-team .member img {
+  .about-team img {
     width: 250px;
     height: 180px;
     margin-bottom: 20px;
   }
 }
-.about-team .member p {
+.about-team p {
   width: 350px;
   padding: 20px 0;
 }
 @media (max-width: 500px) {
-  .about-team .member p {
+  .about-team p {
     width: 90%;
   }
 }
