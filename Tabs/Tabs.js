@@ -6,6 +6,7 @@ class TabLink{
       this.content = document.querySelector(`.content[data-tab='${this.data}']`);
 
       this.element.addEventListener('click', () => this.selectContent());
+
     }
     
     selectContent(){
@@ -18,6 +19,7 @@ class TabLink{
       this.element.classList.toggle("link-highlight");
       
     }
+
   }
 
 

@@ -168,22 +168,36 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  margin-bottom: 10px;
 }
 .tab-navigator .tabs .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   padding: 10px 40px;
-  background: #DCEDB9;
+  margin: 10px;
+  width: 150px;
   font-size: 1.6rem;
   text-decoration: none;
+  background: #DCEDB9;
+  border: 2px solid #6CB043;
+  font-family: 'Crete Round', serif;
 }
 .tab-navigator .tabs .link-highlight {
-  color: white;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.tab-navigator .tabs div:hover {
+  text-decoration: underline;
+  font-weight: 600;
 }
 .tab-navigator .tab-content {
   width: 100%;
-  background: #6CB043;
+  background: #DCEDB9;
+  padding: 20px;
 }
 .tab-navigator .tab-content .content {
-  border: 1px solid #6CB043;
   display: none;
 }
 .tab-navigator .tab-content .showup {
