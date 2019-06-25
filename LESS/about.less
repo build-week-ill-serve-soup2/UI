@@ -5,6 +5,12 @@
     object-fit: cover;
     height: 400px;
   }
+
+  @media @mobile {
+    img {
+      display: none;
+    }
+  }
 }
 
 .about-team {
@@ -25,8 +31,13 @@
 
     img {
       width: 350px;
+      height: 250px;
+      object-fit: cover;
+      object-position: 100% 50%;
       border-radius: 50px;
-    }
+
+
+  }
 
     p {
       width: 350px;
@@ -44,7 +55,13 @@
       }
 
       img {
-        margin-bottom: 10px;
+        width: 250px;
+        height: 180px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        width: 90%;
       }
     }
   }
