@@ -254,11 +254,23 @@ nav button {
 }
 .mission {
   width: 75%;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   border: 1px solid black;
+  background: white;
+  border-radius: 5px;
+  position: relative;
+  z-index: 10;
+  margin: -70px auto;
+}
+.mission .mission {
+  width: 275px;
+  height: 200px;
+  position: relative;
+  z-index: 5;
 }
 .mission p {
   font-size: 1.3rem;
@@ -368,19 +380,20 @@ nav button {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  border: 1px solid #DCEDB9;
-  background-color: #DCEDB9;
-  color: #6CB043;
-  border-radius: 5px;
+  background: #DCEDB9;
+  color: black;
+  text-align: center;
 }
 .bottom-content .first {
   width: 270px;
   height: 300px;
   margin: 0 auto;
-  font-size: 1.8rem;
-  border-right: 1px solid gray;
+  font-size: 1.3rem;
+  border: 2px solid #6CB043;
+  border-radius: 5px;
+  background-image: linear-gradient(#6cb041, #dcedb9);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
 }
@@ -389,13 +402,15 @@ nav button {
   text-align: center;
 }
 .bottom-content .others {
-  width: 180px;
+  width: 220px;
   height: 300px;
   margin: 0 auto;
-  font-size: 1.3rem;
-  border-right: 1px solid gray;
+  font-size: 2rem;
+  border: 2px solid #6CB043;
+  border-radius: 5px;
+  background-image: linear-gradient(#6cb043, #dcedb9);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
 }

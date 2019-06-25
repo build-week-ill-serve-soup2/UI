@@ -2,32 +2,35 @@
     width: 100%;
     height: 300px;
     .displayFlex(space-around; center; row);
-    border: 1px solid @accentgreen;
-    background-color: @accentgreen;
-    color: @main;
-    border-radius: 5px;
+    background: @accentgreen;
+    color: black;
+    text-align: center;
 
 
                 .first {
                     width: 270px;
                     height: 300px;
                     margin: 0 auto;
-                    font-size: 1.8rem;
-                    border-right: 1px solid gray;
-                    .displayFlex(space-between; center; row);
-                    h2{
+                    font-size: 1.3rem;
+                    border: 2px solid @main;
+                    border-radius: 5px;
+                    background-image: linear-gradient(rgb(#6CB041), rgb(#DCEDB9));
+                    .displayFlex(center; center; row);
+                        h2{
                         padding: 5px;
                         text-align: center;
                     }
                 }
 
                 .others {
-                    width: 180px;
+                    width: 220px;
                     height: 300px;
                     margin: 0 auto;
-                    font-size: 1.3rem;
-                    border-right: 1px solid gray;
-                    .displayFlex(space-between; center; row);
+                    font-size: 2rem;
+                    border: 2px solid @main;
+                    border-radius: 5px;
+                    background-image: linear-gradient(rgb(#6CB043), rgb(#DCEDB9));
+                    .displayFlex(center; center; row);
                  
                 h3{
                     padding: 5px;
