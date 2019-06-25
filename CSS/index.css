@@ -176,6 +176,11 @@ span {
     width: 90vw;
   }
 }
+@media (max-width: 800px) {
+  .wrapper {
+    width: 90vw;
+  }
+}
 nav {
   width: 100%;
   margin: 0 auto;
@@ -439,6 +444,11 @@ footer p {
   object-fit: cover;
   height: 400px;
 }
+@media (max-width: 800px) {
+  .aboutmainimg img {
+    height: 200px;
+  }
+}
 @media (max-width: 500px) {
   .aboutmainimg img {
     display: none;
@@ -467,16 +477,11 @@ footer p {
 .about-team .member:nth-child(even) {
   flex-direction: row-reverse;
 }
-.about-team .member img {
-  width: 350px;
-  height: 250px;
-  object-fit: cover;
-  object-position: 100% 50%;
-  border-radius: 50px;
-}
-.about-team .member p {
-  width: 350px;
-  padding: 20px 0;
+@media (max-width: 800px) {
+  .about-team .member .member-text {
+    margin: 0 30px;
+    width: 70%;
+  }
 }
 @media (max-width: 500px) {
   .about-team .member {
@@ -491,11 +496,32 @@ footer p {
   .about-team .member:not(:last-of-type) {
     border-bottom: 2px solid #6CB043;
   }
+}
+.about-team .member img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  object-position: 100% 50%;
+  border-radius: 50px;
+}
+@media (max-width: 800px) {
+  .about-team .member img {
+    width: 270px;
+    height: 170px;
+  }
+}
+@media (max-width: 500px) {
   .about-team .member img {
     width: 250px;
     height: 180px;
     margin-bottom: 20px;
   }
+}
+.about-team .member p {
+  width: 350px;
+  padding: 20px 0;
+}
+@media (max-width: 500px) {
   .about-team .member p {
     width: 90%;
   }
