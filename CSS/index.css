@@ -267,14 +267,17 @@ nav button {
   margin: -70px auto;
 }
 .mission .mission {
-  width: 275px;
+  width: 350px;
   height: 200px;
   position: relative;
   z-index: 5;
+  opacity: 0.75;
+  filter: alpha(opacity=50);
 }
 .mission p {
-  font-size: 1.3rem;
+  font-size: 2rem;
   text-align: center;
+  padding: 15px;
 }
 .tab-navigator .tabs {
   display: flex;
@@ -395,11 +398,17 @@ nav button {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
 }
 .bottom-content .first h2 {
-  padding: 5px;
+  padding-bottom: 20px;
   text-align: center;
+}
+.bottom-content .first .list {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
 }
 .bottom-content .others {
   width: 220px;
@@ -412,11 +421,18 @@ nav button {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
 }
 .bottom-content .others h3 {
   padding: 5px;
   text-align: center;
+}
+.bottom-content .others .list {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding-left: 15px;
 }
 footer {
   width: 100%;
