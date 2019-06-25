@@ -441,6 +441,11 @@ footer p {
   flex-direction: column;
   margin: 0 90px;
 }
+@media (max-width: 500px) {
+  .about-team {
+    margin: 0;
+  }
+}
 .about-team .member {
   width: 100%;
   padding: 20px;
@@ -459,4 +464,21 @@ footer p {
 .about-team .member p {
   width: 350px;
   padding: 20px 0;
+}
+@media (max-width: 500px) {
+  .about-team .member {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about-team .member:nth-child(even) {
+    flex-direction: column;
+  }
+  .about-team .member:not(:last-of-type) {
+    border-bottom: 2px solid #6CB043;
+  }
+  .about-team .member img {
+    margin-bottom: 10px;
+  }
 }
