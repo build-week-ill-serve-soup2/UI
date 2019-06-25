@@ -1,0 +1,45 @@
+.tab-navigator {
+
+    .tabs {
+        .displayFlex(center);
+        margin-bottom: 10px;
+
+        .link {
+            .displayFlex(center, center);
+            padding: 10px 40px;
+            margin: 10px;
+            width: 150px;
+            font-size: 1.6rem;
+            text-decoration: none;
+            background: @accentgreen;
+            border: 2px solid @main;
+            font-family: 'Crete Round', serif;
+        }
+
+        .link-highlight {
+            font-weight: 600;
+            font-size: 1.8rem;
+        }
+
+        div:hover {
+            text-decoration: underline;
+            font-weight: 600;
+        }
+    }
+
+
+   .tab-content {
+       width: 100%;
+       background: @accentgreen;
+       padding: 20px;
+
+       .content {
+           display: none;
+       }
+
+       .showup {
+           display: block;
+       }
+   }
+
+}
