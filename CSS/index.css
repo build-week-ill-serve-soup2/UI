@@ -292,6 +292,17 @@ nav button {
     height: 250px;
     margin: auto;
   }
+  h2 {
+    position: relative;
+    z-index: 10;
+    margin: -30px auto;
+  }
+  h4 {
+    display: none;
+  }
+  button {
+    display: none;
+  }
 }
 .mission {
   width: 75%;
@@ -318,6 +329,11 @@ nav button {
 .mission h3 {
   text-align: center;
   padding: 15px;
+}
+@media (max-width: 500px) {
+  .mission {
+    display: none;
+  }
 }
 .tab-navigator .tabs {
   display: flex;
@@ -472,6 +488,41 @@ nav button {
   align-items: start;
   flex-direction: column;
   padding-left: 15px;
+}
+@media (max-width: 500px) {
+  .bottom-content {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .first {
+    width: 75%;
+    margin: auto;
+  }
+  .first h2 {
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .first .list {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+  }
+  .others {
+    width: 100px;
+    margin: auto;
+  }
+  .others h3 {
+    text-align: center;
+    padding: none;
+  }
+  .others .list {
+    padding-left: none;
+  }
 }
 footer {
   width: 100%;
