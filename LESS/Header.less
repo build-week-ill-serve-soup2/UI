@@ -1,0 +1,93 @@
+nav {
+        width: 100%;
+        margin: 0 auto;
+        .displayFlex(space-between; center; row);
+        padding: 5px;
+        flex-wrap: wrap;
+
+            @media @mobile {
+            nav {
+                .displayFlex(center, center, column);
+                flex-wrap: nowrap;
+                }
+            }   
+
+        .logo {
+            width: 220px;
+            margin: 5px; 
+            
+            @media @mobile {
+                .logo{
+                    width: 100%;
+                    margin: 0 auto;
+                }
+            }    
+        }
+        a {
+            width: 75px;
+            margin: 0 auto;
+            padding: 5px 5px;
+            font-size: 1.3rem;
+            color: @main;
+
+            @media @mobile {
+                text-align: center;
+            }
+        
+        }
+        button {
+            width: 120px;
+            margin: 15px;
+            border: 1px solid @main;
+            font-size: 1.3rem;
+            color: @main;
+            padding: 5px;
+            border-radius: 5px;
+            background: white;
+            
+
+            @media @mobile {
+                
+            }
+        }
+
+    }
+    .top-content {
+        width: 100%;
+        margin: 0 auto;
+        padding: 5px;
+        .displayFlex(center; start; column);
+        flex-wrap: nowrap;
+        box-sizing: border-box;
+        border: 1px solid @main;
+        background-image: url(http://stvincentstmary.com/wp-content/uploads/2016/11/stv_stm_header-soup.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 1000px;
+        height: 400px;
+       
+        h1 {
+            color: white;
+            font-size: 3rem;
+        }
+        h2{
+            color: white;
+            font-size: 2rem;
+        }
+        button {
+            padding: 10px 40px;
+            background: @main;
+            font-size: 1rem; 
+            color: white;
+            border-radius: 7px;
+        }
+    }
+        .mission {
+         width: 75%;
+         .displayFlex(center, center, row);
+         border: 1px solid black;
+         p {
+             font-size: 1.3rem;
+             text-align: center;
+         }
+        }
