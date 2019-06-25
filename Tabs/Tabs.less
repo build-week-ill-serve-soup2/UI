@@ -4,6 +4,13 @@
         .displayFlex(center);
         margin-bottom: 10px;
 
+        @media @mobile{
+            .displayFlex(space-around);
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 10px;
+        }
+
         .link {
             .displayFlex(center, center);
             padding: 10px 40px;
@@ -14,6 +21,10 @@
             background: @accentgreen;
             border: 2px solid @main;
             font-family: 'Crete Round', serif;
+
+            @media @mobile{
+                width: 45%;
+            }
         }
 
         .link-highlight {
