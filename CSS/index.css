@@ -160,7 +160,7 @@ p {
   padding-bottom: 10px;
 }
 .wrapper {
-  width: 950px;
+  width: 1000px;
   margin: 0 auto;
 }
 .tab-navigator .tabs {
@@ -172,6 +172,8 @@ p {
 .tab-navigator .tabs .link {
   padding: 10px 40px;
   background: #DCEDB9;
+  font-size: 1.6rem;
+  text-decoration: none;
 }
 .tab-navigator .tabs .link-highlight {
   color: white;
