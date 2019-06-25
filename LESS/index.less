@@ -13,6 +13,16 @@
 
     .descript-text {
         width: 300px;
+
+        @media @mobile{
+            flex-direction: column;
+            width: 100%;
+            padding: 10px;
+        }
+    }
+
+    @media @mobile{
+        flex-direction: column;
     }
 }
 
@@ -23,6 +33,10 @@
     }
     .nomore-text {
         width: 300px;
+    }
+
+    @media @mobile{
+        display: none;
     }
 }
 
