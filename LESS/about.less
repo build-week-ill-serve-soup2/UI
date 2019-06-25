@@ -9,18 +9,24 @@
 
 .about-team {
   .displayFlex(space-around, center, column);
+    margin: 0 90px;
 
   .member {
     width: 100%;
     padding: 20px;
     .displayFlex(space-around, space-around, row);
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+    
+    }
 
     img {
-      width: 400px;
+      width: 350px;
+      border-radius: 50px;
     }
 
     p {
-      width: 400px;
+      width: 350px;
       padding: 20px 0;
     }
   }

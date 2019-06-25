@@ -159,6 +159,9 @@ p {
   font-size: 1.6rem;
   padding-bottom: 10px;
 }
+span {
+  font-size: 1.6rem;
+}
 .wrapper {
   width: 1000px;
   margin: 0 auto;
@@ -436,6 +439,7 @@ footer p {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  margin: 0 90px;
 }
 .about-team .member {
   width: 100%;
@@ -445,10 +449,14 @@ footer p {
   align-items: space-around;
   flex-direction: row;
 }
+.about-team .member:nth-child(even) {
+  flex-direction: row-reverse;
+}
 .about-team .member img {
-  width: 400px;
+  width: 350px;
+  border-radius: 50px;
 }
 .about-team .member p {
-  width: 400px;
+  width: 350px;
   padding: 20px 0;
 }
