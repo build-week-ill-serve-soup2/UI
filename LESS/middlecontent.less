@@ -1,0 +1,35 @@
+
+.description {
+    .displayFlex(space-around);
+    img {
+        width: 500px;
+    }
+
+    .descript-text {
+        width: 300px;
+
+        @media @mobile{
+            flex-direction: column;
+            width: 100%;
+            padding: 10px;
+        }
+    }
+
+    @media @mobile{
+        flex-direction: column;
+    }
+}
+
+.nomore {
+    .displayFlex(space-around, center, row-reverse);
+    img {
+        width: 500px;
+    }
+    .nomore-text {
+        width: 300px;
+    }
+
+    @media @mobile{
+        display: none;
+    }
+}
