@@ -264,6 +264,9 @@ nav button {
   font-size: 1.3rem;
   text-align: center;
 }
+.tab-navigator {
+  padding: 20px;
+}
 .tab-navigator .tabs {
   display: flex;
   justify-content: center;
