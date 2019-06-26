@@ -1,5 +1,10 @@
 .tab-navigator {
+    padding: 20px;
 
+    @media @mobile {
+        padding: 0;
+    }
+    
     .tabs {
         .displayFlex(center);
         margin-bottom: 10px;
@@ -14,6 +19,7 @@
         .link {
             .displayFlex(center, center);
             padding: 10px 40px;
+            border-radius: 7px;
             margin: 10px;
             width: 150px;
             font-size: 1.6rem;
@@ -46,10 +52,33 @@
 
        .content {
            display: none;
+
+           img {
+               width: 300px;
+               height: 200px;
+
+               @media @mobile {
+                   display: none;
+               }
+           }
+
+           .contentinfo {
+               padding: 2%;
+            
+            }
+
+            .video {
+                width: 50%;
+
+                @media @mobile {
+                    display: none;
+                }
+            }
+
        }
 
        .showup {
-           display: block;
+           .displayFlex();
        }
    }
 
