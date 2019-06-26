@@ -349,7 +349,6 @@ nav button {
   width: 50%;
 }
 .tab-navigator .tab-content .showup {
-  display: block;
   display: flex;
   justify-content: space-between;
   align-items: center;
