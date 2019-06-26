@@ -342,11 +342,21 @@ nav button {
   width: 300px;
   height: 200px;
 }
+@media (max-width: 500px) {
+  .tab-navigator .tab-content .content img {
+    display: none;
+  }
+}
 .tab-navigator .tab-content .content .contentinfo {
   padding: 2%;
 }
 .tab-navigator .tab-content .content .video {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .tab-navigator .tab-content .content .video {
+    display: none;
+  }
 }
 .tab-navigator .tab-content .showup {
   display: flex;
