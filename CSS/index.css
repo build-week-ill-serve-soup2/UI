@@ -584,7 +584,6 @@ footer p {
   font-size: 1rem;
   text-align: right;
 }
-<<<<<<< HEAD
 .aboutmainimg {
   margin: 20px 0;
 }
@@ -680,7 +679,7 @@ footer p {
   .about-team p {
     width: 90%;
   }
-=======
+}
 .articles {
   margin-top: 95px;
 }
@@ -696,7 +695,7 @@ footer p {
   box-shadow: 2px 2px 2px lightgrey;
 }
 .article h2 {
-  font-size: 1rem;
+  font-size: 0.75rem;
   padding: 0;
   margin: 15px 0 0;
 }
@@ -717,5 +716,4 @@ footer p {
 }
 .article-open {
   height: 275px;
->>>>>>> 02625c14bf5dbcf3cd3f27f35d7a261a236413f5
 }
