@@ -338,8 +338,19 @@ nav button {
 .tab-navigator .tab-content .content {
   display: none;
 }
+.tab-navigator .tab-content .content img {
+  width: 300px;
+  height: 200px;
+}
+.tab-navigator .tab-content .content .contentinfo {
+  padding: 2%;
+}
 .tab-navigator .tab-content .showup {
   display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
 }
 .description {
   display: flex;
