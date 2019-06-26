@@ -191,90 +191,159 @@ nav {
   padding: 5px;
   flex-wrap: wrap;
 }
-@media (max-width: 500px) {
-  nav nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-}
 nav .logo {
-  width: 220px;
+  width: 100px;
+  height: 100px;
   margin: 5px;
 }
-@media (max-width: 500px) {
-  nav .logo .logo {
-    width: 100%;
-    margin: 0 auto;
-  }
+nav h2 {
+  color: #6CB043;
 }
 nav a {
   width: 75px;
-  margin: 0 auto;
+  margin: auto;
   padding: 5px 5px;
   font-size: 1.3rem;
   color: #6CB043;
 }
-@media (max-width: 500px) {
-  nav a {
-    text-align: center;
-  }
-}
 nav button {
-  width: 120px;
-  margin: 15px;
-  border: 1px solid #6CB043;
-  font-size: 1.3rem;
-  color: #6CB043;
-  padding: 5px;
+  padding: 5px 5px;
   border-radius: 5px;
   background: white;
+  font-size: 1.3rem;
+  color: #6CB043;
+  width: 120px;
+  margin: 15px;
+  box-shadow: none;
+}
+@media (max-width: 500px) {
+  nav nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+  }
+}
+@media (max-width: 500px) {
+  nav .logo {
+    width: 50%;
+    height: 200px;
+    margin: auto;
+  }
+}
+@media (max-width: 500px) {
+  nav h2 {
+    width: 50%;
+    margin: auto;
+  }
+}
+@media (max-width: 500px) {
+  nav div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  nav a {
+    font-size: 2rem;
+    width: 100%;
+    margin: auto;
+  }
+}
+@media (max-width: 500px) {
+  nav div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  nav button {
+    font-size: 2rem;
+    width: 75%;
+    margin: auto;
+  }
 }
 .top-content {
   width: 100%;
   margin: 0 auto;
-  padding: 5px;
   display: flex;
   justify-content: center;
   align-items: start;
   flex-direction: column;
   flex-wrap: nowrap;
   box-sizing: border-box;
-  border: 1px solid #6CB043;
   background-image: url(http://stvincentstmary.com/wp-content/uploads/2016/11/stv_stm_header-soup.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  width: 1000px;
   height: 400px;
-}
-.top-content h1 {
-  color: white;
-  font-size: 3rem;
 }
 .top-content h2 {
   color: white;
-  font-size: 2rem;
+  margin: 3px 15px;
+}
+.top-content h4 {
+  color: white;
+  margin: 3px 15px;
 }
 .top-content button {
-  padding: 10px 40px;
+  padding: 5px 5px;
+  border-radius: 5px;
   background: #6CB043;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: white;
-  border-radius: 7px;
+  width: 120px;
+  margin: 10px 15px;
+  box-shadow: none;
+}
+@media (max-width: 500px) {
+  .top-content {
+    width: 100%;
+    height: 250px;
+    margin: auto;
+  }
+  h2 {
+    position: relative;
+    z-index: 10;
+    margin: -30px auto;
+  }
+  h4 {
+    display: none;
+  }
+  button {
+    display: none;
+  }
 }
 .mission {
   width: 75%;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   border: 1px solid black;
+  background: hsla(33, 47%, 93%, 0.992);
+  border-radius: 5px;
+  position: relative;
+  z-index: 10;
+  margin: -70px auto;
 }
-.mission p {
-  font-size: 1.3rem;
+.mission .mission {
+  width: 350px;
+  height: 200px;
+  position: relative;
+  z-index: 5;
+  opacity: 0.75;
+  filter: alpha(opacity=50);
+}
+.mission h3 {
   text-align: center;
+  padding: 15px;
+}
+@media (max-width: 500px) {
+  .mission {
+    display: none;
+  }
 }
 .tab-navigator {
   padding: 20px;
@@ -369,6 +438,7 @@ nav button {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  margin-top: 105px;
 }
 .description img {
   width: 500px;
@@ -412,40 +482,90 @@ nav button {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  border: 1px solid #DCEDB9;
-  background-color: #DCEDB9;
-  color: #6CB043;
-  border-radius: 5px;
+  background: #FAF3DD;
+  color: black;
+  text-align: center;
 }
 .bottom-content .first {
   width: 270px;
-  height: 300px;
-  margin: 0 auto;
-  font-size: 1.8rem;
-  border-right: 1px solid gray;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-}
-.bottom-content .first h2 {
-  padding: 5px;
-  text-align: center;
-}
-.bottom-content .others {
-  width: 180px;
-  height: 300px;
+  height: 270px;
   margin: 0 auto;
   font-size: 1.3rem;
-  border-right: 1px solid gray;
+  border-radius: 5px;
+  background-image: linear-gradient(#DCEDB9, #a5d289);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
+}
+.bottom-content .first h2 {
+  padding-bottom: 20px;
+  text-align: center;
+}
+.bottom-content .first .list {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.bottom-content .others {
+  width: 220px;
+  height: 270px;
+  margin: 0 auto;
+  font-size: 2rem;
+  border-radius: 5px;
+  background-image: linear-gradient(#DCEDB9, #a5d289);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .bottom-content .others h3 {
   padding: 5px;
   text-align: center;
+}
+.bottom-content .others .list {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding-left: 15px;
+}
+@media (max-width: 500px) {
+  .bottom-content {
+    width: 100%;
+    height: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .first {
+    width: 75%;
+    margin: auto;
+  }
+  .first h2 {
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .first .list {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+  }
+  .others {
+    width: 100px;
+    margin: auto;
+  }
+  .others h3 {
+    text-align: center;
+    padding: none;
+  }
+  .others .list {
+    padding-left: none;
+  }
 }
 footer {
   width: 100%;
@@ -464,6 +584,7 @@ footer p {
   font-size: 1rem;
   text-align: right;
 }
+<<<<<<< HEAD
 .aboutmainimg {
   margin: 20px 0;
 }
@@ -559,4 +680,42 @@ footer p {
   .about-team p {
     width: 90%;
   }
+=======
+.articles {
+  margin-top: 95px;
+}
+.article {
+  margin: 20px 10%;
+  padding: 0 20px 25px;
+  border: 1px solid lightgrey;
+  border-radius: 7px;
+  background-color: #DCEDB9;
+  position: relative;
+  height: 35px;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px lightgrey;
+}
+.article h2 {
+  font-size: 1rem;
+  padding: 0;
+  margin: 15px 0 0;
+}
+.article .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.article .expandButton {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 12px;
+  color: #FAF3DD;
+  cursor: pointer;
+  transform: translate(-50%);
+  background-color: white;
+}
+.article-open {
+  height: 275px;
+>>>>>>> 02625c14bf5dbcf3cd3f27f35d7a261a236413f5
 }
