@@ -163,6 +163,12 @@ p {
   font-size: 1.6rem;
   padding-bottom: 10px;
 }
+li {
+  font-size: 1.6rem;
+}
+ul {
+  list-style: square inside;
+}
 span {
   font-size: 1.6rem;
 }
@@ -477,6 +483,16 @@ nav button {
   .nomore {
     display: none;
   }
+}
+.demo-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  border: 2px solid blue;
+}
+.demo-middle .demo-pitch {
+  width: 300px;
 }
 .bottom-content {
   width: 100%;

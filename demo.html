@@ -34,14 +34,76 @@
             <h4>Learn directly from the experts</h4>
             <button>Schedule Demo</button>
           </div>
+
       <div class="aboutmainimg">
-        <img src="/Imgs/demo.jpg" />
+        <img src="/Imgs/demo.jpg" alt ="Picture of a phone and tablet">
         <button>Get Started</button>
       </div>
 
       <!-- start demo content -->
 
+<div class="demo-middle">
+
+    <div class="demo-pitch">
+        <h3>Live Demo</h3>
+        <p>Our team is awesome and has some general skills and ability that would somehow benefit you to actually meet in person</p>
+        <p>With a live demo you'll gain:</p>
+        <ul>
+            <li>Customized set up</li>
+            <li>Live trouble shooting</li>
+            <li>Hands on walk throughs</li>
+        </ul>
+    </div>
+
+
+        <form class="demoform">
+            
+                <div><input type="text" name="fullname" placeholder="Full Name"></div>
+
+                <div><input type="tel" name="phone" placeholder="Phone ###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required></div>
+
+                <div><input type="email" name="email" placeholder="Email"></div> 
+                <select>
+                    <option value="" disabled selected hidden>How did you hear about us?</option>
+                    <option value="commercial">Commercial</option>
+                    <option value="youtube">YouTube</option>
+                    <option value="wordofmouth">Word of Mouth</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <div class="msg"><label for="message">Message</label></div>
+
+                <div><textarea name="message" placeholder="Anything in particular we should know about?" rows="10" cols="50" style="resize:none;"></textarea><div>
+
+                <div><input type="submit"></div>
+            </form>
+</div>
+
       <!-- end demo content -->
+
+<div class="demo-bottom">
+                <h3>Need Immediate Assistance?</h3>
+        
+                <div class ="department">
+                <h4>Customer Service</h4>
+                <ul>
+                        <li class="phonelabel">Phone</li>
+                        <li class="phonenumber">555-555-5555</li>
+                        <li class="phonelabel">Toll-Free</li>
+                        <li class="phonenumber">1-800-555-5555</li>
+                </ul>
+            </div>
+            <div class ="department">
+                <h4>Technical Support</h4>
+                <ul>
+                        <li class="phonelabel">Phone</li>
+                        <li class="phonenumber">555-555-5555</li>
+                        <li class="phonelabel">Toll-Free</li>
+                        <li class="phonenumber">1-800-555-5555</li>
+                    </ul>
+                </div>
+</div>
     </div>
   </body>
 </html>
