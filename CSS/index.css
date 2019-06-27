@@ -759,6 +759,11 @@ nav button {
   flex-direction: column;
   padding-left: 15px;
 }
+.bottom-content .others .list a {
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: black;
+}
 @media (max-width: 500px) {
   .bottom-content .others .list {
     padding-left: none;
@@ -808,6 +813,11 @@ footer p {
   top: 175px;
   left: 15px;
 }
+@media (max-width: 800px) {
+  .about-top h2 {
+    top: 110px;
+  }
+}
 @media (max-width: 500px) {
   .about-top h2 {
     top: 90px;
@@ -817,6 +827,11 @@ footer p {
   position: absolute;
   top: 220px;
   left: 15px;
+}
+@media (max-width: 800px) {
+  .about-top h4 {
+    top: 155px;
+  }
 }
 @media (max-width: 500px) {
   .about-top h4 {
