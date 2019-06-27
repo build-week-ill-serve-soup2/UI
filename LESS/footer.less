@@ -5,7 +5,19 @@
     background: @tan;
     color: black;
     text-align: center;
+        
+        .bottom-content:hover {
+                    border: 2px solid @main;
+                    }
 
+        @media @mobile {
+                   
+                    width: 100%;
+                    height: 1100px;
+                    margin: 0 auto;
+                    .displayFlex(center; center; column);
+                    
+                }
 
                 .first {
                     width: 270px;
@@ -15,15 +27,68 @@
                     border-radius: 5px;
                     background-image: linear-gradient((@accentgreen), lighten(@main, 20.5%));
                     .displayFlex(center; center; column);
+
+                    .first:hover {
+                        border: 2px solid @main;
+                    }
                 
+                    @media @mobile {
+                
+                        width: 100%;
+                        height: 190px;
+                        margin: 5px auto;
+                     }
                         h2{
                         padding-bottom: 20px;
-                        text-align: center;
+                        // text-align: center;
                     }
-                    .list {
-                        .displayFlex(center, start, column);
+                    p {
+                        margin-right: 20px;
+                        }
+                    
+                    div {
+                        @media @mobile {
+                        // margin-left: 20px;
+                        }
+                    }
+                    /* Style all font awesome icons */
+                    .fa {
+                    padding: 10px;
+                    font-size: 16px;
+                    width: 100%;
+                    text-align: center;
+                    text-decoration: none;
+                    .displayFlex(center, center, row);
+                    border: 1px solid red;
+                    }
+
+                    /* Add a hover effect if you want */
+                    .fa:hover {
+                    opacity: 0.7;
+                    }
+
+                    /* Set a specific color for each brand */
+
+                    /* Facebook */
+                    .fa-facebook {
+                    background: #3B5998;
+                    color: white;
+                    }
+
+                    /* Instagram */
+                    .fa-instagram {
+                    background: #FF036A;
+                    color: white;
+                    }
+
+
+                    /* Twitter */
+                    .fa-twitter {
+                    background: #55ACEE;
+                    color: white;
                     }
                 }
+            
 
                 .others {
                     width: 220px;
@@ -33,53 +98,33 @@
                     border-radius: 5px;
                     background-image: linear-gradient((@accentgreen), lighten(@main, 20.5%));
                     .displayFlex(center; center; column);
+
+                    @media @mobile {
+                
+                        width: 100%;
+                        height: 200px;
+                        margin: 10px auto; 
+                }
                  
                 h3{
                     padding: 5px;
                     text-align: center;
                     
+                    @media @mobile {
+                    padding: none;
+                    
+                    }
                 }
                 .list {
                         .displayFlex(center, start, column);
                         padding-left: 15px;
-                    }
-            }
-}
-                @media @mobile {
-                    .bottom-content {
-                    width: 100%;
-                    height: 900px;
-                    margin: auto;
-                    .displayFlex(space-around; center; column);
-                    }
 
-                .first {
-                    width: 75%;
-                    margin: auto;
-                    
-                    h2{
-                        padding-bottom: 20px;
-                        text-align: center;
-                    }
-                    .list {
-                        .displayFlex(center, start, column);
-                    }
-                } 
-                .others {
-                    width: 100px;
-                    margin: auto;                 
-                h3{
-                    text-align: center;
-                    padding: none;
-                    
-                }
-                .list {
+                        @media @mobile {
                         padding-left: none;
                     }
-            }   
-        }
-
-
+                }
+            }
+}
 
     footer {
         width: 100%;
@@ -88,10 +133,15 @@
         .displayFlex(space-between; center; row);
         flex-wrap: wrap;
         border: 1px solid @tan;
-        p {
-            width: 200px;
-            padding: 5px 15px;
-            font-size: 1rem;
-            text-align: right;
+
+        @media @mobile {
+            height: 2rem;
         }
+        p {
+            width: 150px;
+            padding: 5px;
+            font-size: 1rem;
+            text-align: center;
+        }
+
     }
