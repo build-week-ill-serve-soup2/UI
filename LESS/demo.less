@@ -2,19 +2,37 @@
 
 .demo-middle{
     .displayFlex();
-    padding: 0 50px;
+    padding: 0 125px 0 150px;
 
 .demo-pitch {
     width: 300px;
 }
 
 .demo-form {
+
     div {
         padding: 5px 0;
     }
 
     select {
-        padding: 5px 0;
+        margin: 5px 0;
+        width: 350px;
+
+    }
+
+    input {
+        width: 350px;
+    }
+
+    textarea {
+        width: 350px;
+    }
+
+    button {
+
+        .buttonSet();
+        width: 350px;
+        font-size: 1.8rem;
     }
 }
 }
@@ -25,4 +43,14 @@
     height: 200px;
     border-top: 2px solid lighten(@main, 25%);
     .displayFlex();
+
+    .phonelabel {
+        list-style: none;
+        font-size: 1.8rem;
+        margin-bottom: 5px;
+    }
+
+    .phonenumber {
+        margin-bottom: 10px;
+    }
 }
