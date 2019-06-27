@@ -116,12 +116,11 @@
 
                         @media @mobile {
                         padding-left: none;
-
-                        a {
+                    }
+                     a {
                             padding-bottom: 10px;
                             text-decoration: none;
                             color: black;
-                        }
                     }
                 }
             }
@@ -129,14 +128,13 @@
 
     footer {
         width: 100%;
-        height: 5rem;
+        height: 4rem;
         margin: 0 auto;
-        .displayFlex(space-between; center; row);
-        flex-wrap: wrap;
-        border: 1px solid @tan;
+        .displayFlex(flex-start, flex-end, row);
 
         @media @mobile {
             height: 2rem;
+            margin: 0 auto;
         }
         p {
             width: 150px;
@@ -144,5 +142,4 @@
             font-size: 1rem;
             text-align: center;
         }
-
     }
