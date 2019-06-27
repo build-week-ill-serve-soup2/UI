@@ -581,15 +581,15 @@ nav button {
   }
 }
 .bottom-content .first h2 {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
-.bottom-content .first p {
+.bottom-content .first a {
   margin-right: 20px;
-}
-@media (max-width: 500px) {
+  color: #6CB043;
+  padding-bottom: 7px;
 }
 .bottom-content .first .fa {
-  padding: 10px;
+  padding: 7px;
   font-size: 16px;
   width: 100%;
   text-align: center;
@@ -598,7 +598,6 @@ nav button {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  border: 1px solid red;
 }
 .bottom-content .first .fa:hover {
   opacity: 0.7;
@@ -649,6 +648,7 @@ nav button {
   align-items: start;
   flex-direction: column;
   padding-left: 15px;
+  text-decoration: none;
 }
 @media (max-width: 500px) {
   .bottom-content .others .list {
