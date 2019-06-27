@@ -163,6 +163,12 @@ p {
   font-size: 1.6rem;
   padding-bottom: 10px;
 }
+li {
+  font-size: 1.6rem;
+}
+ul {
+  list-style: square inside;
+}
 span {
   font-size: 1.6rem;
 }
@@ -403,6 +409,7 @@ nav button {
   width: 100%;
   background: #DCEDB9;
   padding: 20px;
+  border-radius: 5px;
 }
 .tab-navigator .tab-content .content {
   display: none;
@@ -433,11 +440,22 @@ nav button {
   align-items: center;
   flex-direction: row;
 }
+.replacement {
+  width: 560px;
+  height: 315px;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border: 2px dashed #6CB043;
+}
 .description {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  margin: 0 100px;
   margin-top: 105px;
 }
 .description img {
@@ -469,11 +487,62 @@ nav button {
 }
 .nomore .nomore-text {
   width: 300px;
+  margin-left: 130px;
 }
 @media (max-width: 500px) {
   .nomore {
     display: none;
   }
+}
+.demo-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 125px 0 150px;
+}
+.demo-middle .demo-pitch {
+  width: 300px;
+}
+.demo-middle .demo-form div {
+  padding: 5px 0;
+}
+.demo-middle .demo-form select {
+  margin: 5px 0;
+  width: 350px;
+}
+.demo-middle .demo-form input {
+  width: 350px;
+}
+.demo-middle .demo-form textarea {
+  width: 350px;
+}
+.demo-middle .demo-form button {
+  padding: 5px 5px;
+  border-radius: 7px;
+  background: #6CB043;
+  font-size: 1rem;
+  color: white;
+  width: 350px;
+  font-size: 1.8rem;
+}
+.demo-bottom {
+  padding: 0 50px;
+  margin-top: 30px;
+  height: 200px;
+  border-top: 2px solid #b2d99a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.demo-bottom .phonelabel {
+  list-style: none;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+.demo-bottom .phonenumber {
+  margin-bottom: 10px;
 }
 .bottom-content {
   width: 100%;
