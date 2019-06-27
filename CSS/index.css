@@ -707,7 +707,6 @@ nav button {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  border: 1px solid red;
 }
 .bottom-content .first .fa:hover {
   opacity: 0.7;
