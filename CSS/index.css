@@ -486,6 +486,10 @@ nav button {
 }
 .demo-middle .demo-pitch {
   width: 300px;
+  height: 350px;
+}
+.demo-middle .demo-form {
+  height: 350px;
 }
 .demo-middle .demo-form div {
   padding: 5px 0;
