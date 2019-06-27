@@ -1,3 +1,24 @@
+let button = document.querySelector('.buttonOne');
+button.addEventListener('mouseover', function(event) {
+    button.style.border = '2px solid black';
+});
+
+button.addEventListener('mouseout', function(event) {
+
+    button.style.border = 'none';
+});
+
+let buttonTwo = document.querySelector('.buttonTwo');
+buttonTwo.addEventListener('mouseover', function(event) {
+    buttonTwo.style.border = '2px solid black';
+});
+
+buttonTwo.addEventListener('mouseout', function(event) {
+
+    buttonTwo.style.border = 'none';
+});
+
+
 let navColor = document.querySelector('.first');
 navColor.addEventListener('mouseover', function(event) {
 
