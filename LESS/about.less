@@ -1,0 +1,93 @@
+
+
+.aboutmainimg {
+  margin: 20px 0;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 400px;
+
+    @media @tablet {
+      height: 200px;
+    }
+
+    @media @mobile {
+      display: none;
+    }
+  }
+
+}
+
+.about-team {
+  .displayFlex(space-around, center, column);
+  margin: 0 90px;
+
+  
+  @media @mobile {
+    margin: 0;
+  }
+
+  .member {
+    width: 100%;
+    padding: 20px;
+    .displayFlex(space-around, space-around, row);
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    @media @mobile {
+      .displayFlex(space-around, center, column);
+      &:nth-child(even) {
+        flex-direction: column;
+      }
+
+      &:not(:last-of-type) {
+        border-bottom: 2px solid @main;
+      }
+
+    }
+
+    @media @tablet {
+      .member-text {
+        margin: 0 30px;
+        width: 70%;
+
+        @media @mobile {
+          margin: 0;
+          width: 100%;
+        }
+      }
+    }
+    }
+
+
+    img {
+      width: 350px;
+      height: 250px;
+      object-fit: cover;
+      object-position: 100% 50%;
+      border-radius: 50px;
+
+      @media @tablet {
+        width: 270px;
+        height: 170px;
+      }
+
+      @media @mobile {
+        width: 250px;
+        height: 180px;
+        margin-bottom: 20px;
+      }
+
+  }
+
+    p {
+      width: 350px;
+      padding: 20px 0;
+
+      @media @mobile {
+        width: 90%;
+      }
+    }
+  }

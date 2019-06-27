@@ -1,11 +1,10 @@
-// let navColor = document.querySelector('.hover');
-// navColor.addEventListener('mouseover', function(e) {
-//     event.target.style.color = 'black';
-//     event.target.style.border = '1px solid @main';
+// let navColor = document.querySelector('.first');
+// navColor.addEventListener('mouseover', function(event) {
+//     event.target.style.border = '2px solid black';
+//     event.stopPropagation();
 // });
 
-// let navColor = document.querySelector('.hover');
-// navColor.addEventListener('mouseout', function(e) {
+// navColor.addEventListener('mouseout', function(event) {
 //     event.target.style.color = '@main';
 //     event.target.style.border = '1px solid @main';
 // });

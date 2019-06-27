@@ -27,6 +27,10 @@
                     border-radius: 5px;
                     background-image: linear-gradient((@accentgreen), lighten(@main, 20.5%));
                     .displayFlex(center; center; column);
+
+                    .first:hover {
+                        border: 2px solid @main;
+                    }
                 
                     @media @mobile {
                 
@@ -36,7 +40,7 @@
                      }
                         h2{
                         padding-bottom: 20px;
-                        text-align: center;
+                        // text-align: center;
                     }
                     p {
                         margin-right: 20px;
@@ -44,7 +48,7 @@
                     
                     div {
                         @media @mobile {
-                        margin-left: 20px;
+                        // margin-left: 20px;
                         }
                     }
                     /* Style all font awesome icons */

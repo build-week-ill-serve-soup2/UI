@@ -1,0 +1,96 @@
+.tab-navigator {
+    padding: 20px;
+    
+    @media @mobile {
+        padding: 0;
+    }
+    
+    .tabs {
+        .displayFlex(center);
+        margin-bottom: 10px;
+
+        @media @mobile{
+            .displayFlex(space-around);
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .link {
+            .displayFlex(center, center);
+            padding: 10px 40px;
+            border-radius: 7px;
+            margin: 10px;
+            width: 150px;
+            font-size: 1.6rem;
+            text-decoration: none;
+            background: @accentgreen;
+            border: 2px solid @main;
+            font-family: 'Crete Round', serif;
+
+            @media @mobile{
+                width: 45%;
+            }
+        }
+
+        .link-highlight {
+            font-weight: 600;
+            font-size: 1.8rem;
+        }
+
+        div:hover {
+            text-decoration: underline;
+            font-weight: 600;
+        }
+    }
+
+
+   .tab-content {
+       width: 100%;
+       background: @accentgreen;
+       padding: 20px;
+       border-radius: 5px;
+
+       .content {
+           display: none;
+
+           img {
+               width: 300px;
+               height: 200px;
+
+               @media @mobile {
+                   display: none;
+               }
+           }
+
+           .contentinfo {
+               padding: 2%;
+
+            }
+
+            .video {
+                width: 50%;
+
+                @media @mobile {
+                    display: none;
+                }
+            }
+
+       }
+
+       .showup {
+           .displayFlex();
+       }
+   }
+
+}
+
+
+// Take .replacement out if inputting an actual video 
+.replacement {
+    width: 560px;
+    height: 315px;
+    font-size: 3rem;
+    .displayFlex(center, center);
+    border: 2px dashed @main;
+}
