@@ -55,6 +55,8 @@
 
     @media @mobile {
         .displayFlex(space-around, center, column);
+        height: 720px;
+        padding-bottom: 50px;
     }
 
 .demo-pitch {
@@ -73,6 +75,11 @@
 .demo-form {
     height: 350px;
 
+    @media @tablet {
+        padding: 0 10px;
+    }
+
+
     div {
         padding: 5px 0;
     }
@@ -81,10 +88,18 @@
         margin: 5px 0;
         width: 350px;
 
+        @media @mobile {
+            height: 30px;
+        }
+
     }
 
     input {
         width: 350px;
+
+        @media @mobile {
+            height: 30px;
+        }
     }
 
     textarea {
@@ -96,11 +111,6 @@
         .buttonSet();
         width: 350px;
         font-size: 1.8rem;
-    }
-
-
-    @media @tablet {
-        padding: 0 10px;
     }
 
 }
@@ -119,6 +129,7 @@
         .department {
             width: 70%;
         }
+
     }
     
     @media @mobile {
