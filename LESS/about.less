@@ -1,22 +1,48 @@
-
-
-.aboutmainimg {
+.about-top {
+  position: relative;
+  color: white;
   margin: 20px 0;
+  text-shadow: 2px 2px black;
 
   img {
     width: 100%;
     object-fit: cover;
     height: 400px;
+    opacity: .85;
 
     @media @tablet {
-      height: 200px;
+      height: 250px;
     }
 
-    @media @mobile {
-      display: none;
-    }
   }
 
+  h2 {
+      position: absolute;
+      top: 175px;
+      left: 15px;
+
+      @media @tablet {
+        top: 110px;
+    }
+
+      @media @mobile {
+          top: 90px;
+      }
+  }
+
+  h4 {
+      position: absolute;
+      top: 220px;
+      left: 15px;
+
+      @media @tablet {
+        top: 155px;
+    }
+
+      @media @mobile {
+          top: 130px;
+      }
+  }
 }
 
 .about-team {

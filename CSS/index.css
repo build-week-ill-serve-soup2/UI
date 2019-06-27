@@ -259,6 +259,7 @@ nav button {
   background-repeat: no-repeat;
   background-position: center;
   height: 400px;
+  text-shadow: 2px 2px black;
 }
 @media (max-width: 500px) {
   .top-content {
@@ -477,6 +478,53 @@ nav button {
     display: none;
   }
 }
+.demo-top {
+  position: relative;
+  color: white;
+  margin: 20px 0;
+  text-shadow: 2px 2px black;
+}
+.demo-top img {
+  width: 100%;
+  object-fit: cover;
+  height: 400px;
+  opacity: 0.85;
+}
+@media (max-width: 800px) {
+  .demo-top img {
+    height: 250px;
+  }
+}
+.demo-top h2 {
+  position: absolute;
+  top: 175px;
+  left: 15px;
+}
+@media (max-width: 800px) {
+  .demo-top h2 {
+    top: 110px;
+  }
+}
+@media (max-width: 500px) {
+  .demo-top h2 {
+    top: 90px;
+  }
+}
+.demo-top h4 {
+  position: absolute;
+  top: 220px;
+  left: 15px;
+}
+@media (max-width: 800px) {
+  .demo-top h4 {
+    top: 155px;
+  }
+}
+@media (max-width: 500px) {
+  .demo-top h4 {
+    top: 130px;
+  }
+}
 .demo-middle {
   display: flex;
   justify-content: space-between;
@@ -484,8 +532,35 @@ nav button {
   flex-direction: row;
   padding: 0 125px 0 150px;
 }
+@media (max-width: 800px) {
+  .demo-middle {
+    padding: 0 10px 0 10px;
+  }
+}
+@media (max-width: 500px) {
+  .demo-middle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .demo-middle .demo-pitch {
   width: 300px;
+  height: 350px;
+}
+@media (max-width: 800px) {
+  .demo-middle .demo-pitch {
+    padding-left: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .demo-middle .demo-pitch {
+    height: 260px;
+  }
+}
+.demo-middle .demo-form {
+  height: 350px;
 }
 .demo-middle .demo-form div {
   padding: 5px 0;
@@ -509,6 +584,11 @@ nav button {
   width: 350px;
   font-size: 1.8rem;
 }
+@media (max-width: 800px) {
+  .demo-middle .demo-form {
+    padding: 0 10px;
+  }
+}
 .demo-bottom {
   padding: 0 50px;
   margin-top: 30px;
@@ -518,6 +598,35 @@ nav button {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+}
+@media (max-width: 800px) {
+  .demo-bottom {
+    padding: 0 30px;
+  }
+  .demo-bottom .department {
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  .demo-bottom {
+    margin: 0;
+    padding: 0;
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .demo-bottom .department {
+    width: 90%;
+    padding: 0 20px;
+  }
+  .demo-bottom ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
 }
 .demo-bottom .phonelabel {
   list-style: none;
@@ -544,7 +653,7 @@ nav button {
 @media (max-width: 500px) {
   .bottom-content {
     width: 100%;
-    height: 1100px;
+    height: 900px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -598,7 +707,6 @@ nav button {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  border: 1px solid red;
 }
 .bottom-content .first .fa:hover {
   opacity: 0.7;
@@ -650,6 +758,11 @@ nav button {
   flex-direction: column;
   padding-left: 15px;
 }
+.bottom-content .others .list a {
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: black;
+}
 @media (max-width: 500px) {
   .bottom-content .others .list {
     padding-left: none;
@@ -677,22 +790,51 @@ footer p {
   font-size: 1rem;
   text-align: center;
 }
-.aboutmainimg {
+.about-top {
+  position: relative;
+  color: white;
   margin: 20px 0;
+  text-shadow: 2px 2px black;
 }
-.aboutmainimg img {
+.about-top img {
   width: 100%;
   object-fit: cover;
   height: 400px;
+  opacity: 0.85;
 }
 @media (max-width: 800px) {
-  .aboutmainimg img {
-    height: 200px;
+  .about-top img {
+    height: 250px;
+  }
+}
+.about-top h2 {
+  position: absolute;
+  top: 175px;
+  left: 15px;
+}
+@media (max-width: 800px) {
+  .about-top h2 {
+    top: 110px;
   }
 }
 @media (max-width: 500px) {
-  .aboutmainimg img {
-    display: none;
+  .about-top h2 {
+    top: 90px;
+  }
+}
+.about-top h4 {
+  position: absolute;
+  top: 220px;
+  left: 15px;
+}
+@media (max-width: 800px) {
+  .about-top h4 {
+    top: 155px;
+  }
+}
+@media (max-width: 500px) {
+  .about-top h4 {
+    top: 130px;
   }
 }
 .about-team {

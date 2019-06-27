@@ -7,33 +7,27 @@
     <link href="https://fonts.googleapis.com/css?family=Crete+Round&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Request A Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./demo.js " async></script>
+    <title>I'll Serve Soup - Request A Demo</title>
   </head>
 
   <body>
     <div class="wrapper">
       <!-- nav bar -->
       <nav>
-        <img src="Imgs/logo.jpg" class="logo" />
-        <h2>I'll Serve Soup</h2>
-        <div>
-          <a href="#">Login</a>
-          <button>Sign Up</button>
-        </div>
-      </nav>
+            <img class='logo' src="./Imgs/logo.jpg" />
+            <h1>I'll Serve Soup</h1>
+            <button onclick="window.location.href = 'https://w3docs.com';">Log In / Sign Up</button>
+        </nav>
       <!-- end nav bar -->
 
-
+      
       <div class="demo-top">
+            <img src="./Imgs/demo.jpg" alt ="Picture of a phone and tablet">
             <h2>Request A Live Demo</h2>
             <h4>Learn directly from the experts</h4>
-            <button>Schedule Demo</button>
         </div>
-
-      <div class="aboutmainimg">
-        <img src="/Imgs/demo.jpg" alt ="Picture of a phone and tablet">
-      </div>
-
       <!-- start demo content -->
 
 <div class="demo-middle">
@@ -52,12 +46,12 @@
 
         <form class="demo-form">
             <h3>Request A Demo</h3>
-                <div><input type="text" name="fullname" placeholder="Full Name"></div>
+                <div><input type="text" name="fullname" placeholder="Full Name" required></div>
 
                 <div><input type="tel" name="phone" placeholder="Phone ###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                 required></div>
 
-                <div><input type="email" name="email" placeholder="Email"></div> 
+                <div><input type="email" name="email" placeholder="Email" required></div> 
                 
                 <select>
                     <option value="" disabled selected hidden>How did you hear about us?</option>
@@ -69,7 +63,7 @@
 
                 <div><textarea name="message" placeholder="Tell us more about your needs" rows="10" cols="50" style="resize:none;"></textarea></div>
 
-                <button>Book Now</button>
+                <button class ="bookBtn">Book Now</button>
             </form>
 </div>
 
@@ -83,22 +77,79 @@
                 <div class ="department">
                     <h4>Customer Service</h4>
                 <ul>
+                    <div class="phone">
                         <li class="phonelabel">Phone</li>
                         <li class="phonenumber">555-555-5555</li>
+                    </div>
+                    <div class="tollfree">
                         <li class="phonelabel">Toll-Free</li>
                         <li class="phonenumber">1-800-555-5555</li>
+                    </div>
                 </ul>
                 </div>
             <div class ="department">
                 <h4>Technical Support</h4>
                 <ul>
-                        <li class="phonelabel">Phone</li>
-                        <li class="phonenumber">555-555-5555</li>
-                        <li class="phonelabel">Toll-Free</li>
-                        <li class="phonenumber">1-800-555-5555</li>
+                        <div class="phone">
+                                <li class="phonelabel">Phone</li>
+                                <li class="phonenumber">555-555-5555</li>
+                            </div>
+                            <div class="tollfree">
+                                <li class="phonelabel">Toll-Free</li>
+                                <li class="phonenumber">1-800-555-5555</li>
+                            </div>
                     </ul>
                 </div>
 </div>
+
+            <!-- Start Bottom Content -->
+
+            <div class="bottom-content ">
+                    <div class='first'>
+                        <h2>I'll Serve Soup</h2> <br/>
+                        <div>
+                            <p>CONTACT US</p>
+                            <div class='fa'>
+                                <a href="# " class="fa fa-facebook "></a>
+                                <a href="# " class="fa fa-instagram "></a>
+                                <a href="# " class="fa fa-twitter "></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='others'>
+                        <h3>Learn More</h3> <br/>
+                        <div class="list ">
+                            <a href="#">Get Started</a>
+                            <a href="#">Tutorials</a>
+                            <a href="#">FAQ</a>
+                            <a href="demo.html">Request a Demo</a>
+                        </div>
+                    </div>
+                    <div class='others'>
+                        <h3>Dive Deep</h3> <br/>
+                        <div class="list ">
+                            <a href="#">Inventory Processing</a>
+                            <a href="#">Donation Assessment</a>
+                            <a href="#">Order Management</a>
+                            <a href="#">Volunteer Portal</a>
+                        </div>
+                    </div>
+                    <div class='others'>
+                        <h3>Business</h3> <br/>
+                        <div class="list ">
+                            <a href="about.html">About Us</a>
+                            <a href="#">Data Security</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms of Service</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <footer>
+                <p>© 2019 I'LL SERVE SOUP</p>
+            </footer>
     </div>
   </body>
 </html>
