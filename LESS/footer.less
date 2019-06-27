@@ -6,6 +6,10 @@
     color: black;
     text-align: center;
         
+        .bottom-content:hover {
+                    border: 2px solid @main;
+                    }
+
         @media @mobile {
                    
                     width: 100%;
@@ -24,11 +28,7 @@
                     background-image: linear-gradient((@accentgreen), lighten(@main, 20.5%));
                     .displayFlex(center; center; column);
                 
-                    .first:hover {
-                    border: 2px solid @main;
-                    }
-
-                     @media @mobile {
+                    @media @mobile {
                 
                         width: 100%;
                         height: 190px;
@@ -39,7 +39,7 @@
                         text-align: center;
                     }
                     p {
-                            margin-right: 20px;
+                        margin-right: 20px;
                         }
                     
                     div {

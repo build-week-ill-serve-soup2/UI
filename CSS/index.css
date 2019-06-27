@@ -231,9 +231,14 @@ nav .hover a {
   width: 120px;
   margin: auto;
   padding: 5px 5px;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: #6CB043;
   text-align: center;
+  text-decoration: none;
+  transition: color 1s ease-in-out;
+}
+nav .hover a a:hover {
+  color: black;
 }
 @media (max-width: 500px) {
   nav .hover a {
@@ -250,6 +255,7 @@ nav .hover button {
   font-size: 1.3rem;
   color: #6CB043;
   margin: 20px;
+  font-size: 1.5rem;
 }
 @media (max-width: 500px) {
   nav .hover button {
@@ -307,6 +313,7 @@ nav .hover button {
   width: 120px;
   margin: 10px 15px;
   box-shadow: none;
+  font-size: 1.5rem;
 }
 @media (max-width: 500px) {
   .top-content button {
@@ -333,8 +340,8 @@ nav .hover button {
   }
 }
 .mission img {
-  width: 150px;
-  height: 100px;
+  width: 300px;
+  height: 200px;
   position: relative;
   z-index: 5;
   opacity: 0.75;
@@ -453,6 +460,9 @@ nav .hover button {
   color: black;
   text-align: center;
 }
+.bottom-content .bottom-content:hover {
+  border: 2px solid #6CB043;
+}
 @media (max-width: 500px) {
   .bottom-content {
     width: 100%;
@@ -481,9 +491,6 @@ nav .hover button {
   /* Facebook */
   /* Instagram */
   /* Twitter */
-}
-.bottom-content .first .first:hover {
-  border: 2px solid #6CB043;
 }
 @media (max-width: 500px) {
   .bottom-content .first {
@@ -608,7 +615,7 @@ footer p {
 }
 @media (max-width: 500px) {
   .article {
-    margin: 2px 5%;
+    margin: 2px 2%;
   }
 }
 .article h2 {
@@ -622,12 +629,12 @@ footer p {
     font-size: 16px;
   }
 }
-.article h2 .close {
+.article .close {
   position: absolute;
   top: 10px;
   right: 10px;
 }
-.article h2 .expandButton {
+.article .expandButton {
   position: absolute;
   bottom: 0;
   left: 50%;

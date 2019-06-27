@@ -25,7 +25,7 @@ nav {
         }
         h1 {
             color: @main;
-            
+                       
             @media @mobile {
 
                     width: 100%;
@@ -48,9 +48,15 @@ nav {
             width: 120px;
             margin: auto;
             padding: 5px 5px;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             color: @main; 
-            text-align: center;  
+            text-align: center; 
+            text-decoration: none; 
+            transition: color 1s ease-in-out;
+
+             a:hover {
+                color: black;
+            }
             
            @media @mobile {
     
@@ -64,6 +70,7 @@ nav {
             width: 120px;
             .buttonSet(5px 5px, 5px, white, 1.3rem, @main);
             margin: 20px;
+            font-size: 1.5rem;
 
         @media @mobile {
                     font-size: 2rem;
@@ -122,7 +129,8 @@ nav {
             width: 120px;
             margin: 10px 15px;
             box-shadow: none;
-
+            font-size: 1.5rem;
+            
             @media @mobile {
 
                 display: none;
@@ -149,8 +157,8 @@ nav {
             }
           
          img {
-             width: 150px;
-             height: 100px;
+             width: 300px;
+             height: 200px;
              position: relative;
              z-index: 5;
              opacity: 0.75;
