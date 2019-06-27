@@ -500,6 +500,11 @@ nav button {
   top: 175px;
   left: 15px;
 }
+@media (max-width: 800px) {
+  .demo-top h2 {
+    top: 110px;
+  }
+}
 @media (max-width: 500px) {
   .demo-top h2 {
     top: 90px;
@@ -509,6 +514,11 @@ nav button {
   position: absolute;
   top: 220px;
   left: 15px;
+}
+@media (max-width: 800px) {
+  .demo-top h4 {
+    top: 155px;
+  }
 }
 @media (max-width: 500px) {
   .demo-top h4 {
@@ -522,6 +532,11 @@ nav button {
   flex-direction: row;
   padding: 0 125px 0 150px;
 }
+@media (max-width: 800px) {
+  .demo-middle {
+    padding: 0 10px 0 10px;
+  }
+}
 @media (max-width: 500px) {
   .demo-middle {
     display: flex;
@@ -533,6 +548,11 @@ nav button {
 .demo-middle .demo-pitch {
   width: 300px;
   height: 350px;
+}
+@media (max-width: 800px) {
+  .demo-middle .demo-pitch {
+    padding-left: 10px;
+  }
 }
 @media (max-width: 500px) {
   .demo-middle .demo-pitch {
@@ -564,6 +584,11 @@ nav button {
   width: 350px;
   font-size: 1.8rem;
 }
+@media (max-width: 800px) {
+  .demo-middle .demo-form {
+    padding: 0 10px;
+  }
+}
 .demo-bottom {
   padding: 0 50px;
   margin-top: 30px;
@@ -573,6 +598,14 @@ nav button {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+}
+@media (max-width: 800px) {
+  .demo-bottom {
+    padding: 0 30px;
+  }
+  .demo-bottom .department {
+    width: 70%;
+  }
 }
 @media (max-width: 500px) {
   .demo-bottom {

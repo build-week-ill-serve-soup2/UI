@@ -21,6 +21,10 @@
         top: 175px;
         left: 15px;
 
+        @media @tablet {
+            top: 110px;
+        }
+
         @media @mobile {
             top: 90px;
         }
@@ -30,6 +34,10 @@
         position: absolute;
         top: 220px;
         left: 15px;
+
+        @media @tablet {
+            top: 155px;
+        }
 
         @media @mobile {
             top: 130px;
@@ -41,6 +49,10 @@
     .displayFlex();
     padding: 0 125px 0 150px;
     
+    @media @tablet {
+        padding: 0 10px 0 10px;
+    }
+
     @media @mobile {
         .displayFlex(space-around, center, column);
     }
@@ -48,6 +60,10 @@
 .demo-pitch {
     width: 300px;
     height: 350px;
+
+    @media @tablet {
+        padding-left: 10px;
+    }
 
     @media @mobile {
         height: 260px;
@@ -81,6 +97,12 @@
         width: 350px;
         font-size: 1.8rem;
     }
+
+
+    @media @tablet {
+        padding: 0 10px;
+    }
+
 }
 }
 
@@ -91,6 +113,14 @@
     border-top: 2px solid lighten(@main, 25%);
     .displayFlex();
 
+    @media @tablet {
+        padding: 0 30px;
+
+        .department {
+            width: 70%;
+        }
+    }
+    
     @media @mobile {
         margin: 0;
         padding: 0;
