@@ -1,4 +1,44 @@
+.demo-top {
+    position: relative;
+    color: white;
+    margin: 20px 0;
+    text-shadow: 2px 2px black;
 
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 400px;
+      opacity: .85;
+  
+      @media @tablet {
+        height: 200px;
+      }
+  
+      @media @mobile {
+        height: 250px;
+      }
+    }
+
+    h2 {
+        position: absolute;
+        top: 175px;
+        left: 15px;
+
+        @media @mobile {
+            top: 90px;
+        }
+    }
+
+    h4 {
+        position: absolute;
+        top: 220px;
+        left: 15px;
+
+        @media @mobile {
+            top: 130px;
+        }
+    }
+}
 
 .demo-middle{
     .displayFlex();
