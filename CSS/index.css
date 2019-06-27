@@ -492,11 +492,6 @@ nav button {
 }
 @media (max-width: 800px) {
   .demo-top img {
-    height: 200px;
-  }
-}
-@media (max-width: 500px) {
-  .demo-top img {
     height: 250px;
   }
 }
@@ -581,11 +576,23 @@ nav button {
 }
 @media (max-width: 500px) {
   .demo-bottom {
-    height: 500px;
+    margin: 0;
+    padding: 0;
+    height: 350px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+  }
+  .demo-bottom .department {
+    width: 90%;
+    padding: 0 20px;
+  }
+  .demo-bottom ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
   }
 }
 .demo-bottom .phonelabel {
@@ -759,11 +766,6 @@ footer p {
   opacity: 0.85;
 }
 @media (max-width: 800px) {
-  .about-top img {
-    height: 200px;
-  }
-}
-@media (max-width: 500px) {
   .about-top img {
     height: 250px;
   }

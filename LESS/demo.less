@@ -11,12 +11,9 @@
       opacity: .85;
   
       @media @tablet {
-        height: 200px;
-      }
-  
-      @media @mobile {
         height: 250px;
       }
+  
     }
 
     h2 {
@@ -95,8 +92,19 @@
     .displayFlex();
 
     @media @mobile {
-        height: 500px;
+        margin: 0;
+        padding: 0;
+        height: 350px;
         .displayFlex(space-around, center, column);
+
+        .department {
+            width: 90%;
+            padding: 0 20px;
+        }
+
+        ul {
+            .displayFlex();
+        }
     }
 
     .phonelabel {
