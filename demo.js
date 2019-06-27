@@ -1,5 +1,7 @@
-const bookBtn = document.querySelector("bookBtn");
+const bookBtn = document.querySelector(".bookBtn");
+const inputs = form.querySelectorAll("input");
 
-bookBtn.addEventListener("click", () => {
-    target.textContent = "Booked!";
-})
+bookBtn.addEventListener('click', event => {
+    event.target.textContent = "Booked!";
+    event.preventDefault();
+});

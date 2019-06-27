@@ -43,10 +43,18 @@
 .demo-middle{
     .displayFlex();
     padding: 0 125px 0 150px;
+    
+    @media @mobile {
+        .displayFlex(space-around, center, column);
+    }
 
 .demo-pitch {
     width: 300px;
     height: 350px;
+
+    @media @mobile {
+        height: 260px;
+    }
 }
 
 .demo-form {
@@ -85,6 +93,11 @@
     height: 200px;
     border-top: 2px solid lighten(@main, 25%);
     .displayFlex();
+
+    @media @mobile {
+        height: 500px;
+        .displayFlex(space-around, center, column);
+    }
 
     .phonelabel {
         list-style: none;

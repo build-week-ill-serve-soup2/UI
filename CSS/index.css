@@ -527,9 +527,22 @@ nav button {
   flex-direction: row;
   padding: 0 125px 0 150px;
 }
+@media (max-width: 500px) {
+  .demo-middle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .demo-middle .demo-pitch {
   width: 300px;
   height: 350px;
+}
+@media (max-width: 500px) {
+  .demo-middle .demo-pitch {
+    height: 260px;
+  }
 }
 .demo-middle .demo-form {
   height: 350px;
@@ -565,6 +578,15 @@ nav button {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+}
+@media (max-width: 500px) {
+  .demo-bottom {
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .demo-bottom .phonelabel {
   list-style: none;
