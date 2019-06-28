@@ -328,7 +328,7 @@ nav a {
 }
 @media (max-width: 800px) {
   .mission {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 }
 .mission img {
@@ -342,6 +342,11 @@ nav a {
 .mission h3 {
   text-align: center;
   padding: 15px;
+}
+@media (max-width: 800px) {
+  .mission h3 {
+    font-size: 1rem;
+  }
 }
 .tab-navigator {
   padding: 20px;
