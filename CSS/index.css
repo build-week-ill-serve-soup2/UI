@@ -239,6 +239,7 @@ nav button {
   margin-right: 15px;
   font-size: 1.6rem;
   padding: 15px;
+  border: none;
 }
 @media (max-width: 500px) {
   nav button {
@@ -296,8 +297,8 @@ nav button {
   width: 185px;
   padding: 15px;
   margin: 10px 15px;
-  box-shadow: none;
   font-size: 1.6rem;
+  border: none;
 }
 @media (max-width: 500px) {
   .top-content button {
@@ -320,6 +321,11 @@ nav button {
 @media (max-width: 500px) {
   .mission {
     display: none;
+  }
+}
+@media (max-width: 800px) {
+  .mission {
+    font-size: 0.75rem;
   }
 }
 .mission img {
@@ -552,6 +558,17 @@ nav button {
     flex-direction: column;
   }
 }
+@media (max-width: 800px) {
+  .bottom-content {
+    width: 100%;
+    height: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .bottom-content .first {
   width: 270px;
   height: 270px;
@@ -564,19 +581,25 @@ nav button {
   align-items: center;
   flex-direction: column;
   /* Style all font awesome icons */
-  /* Add a hover effect if you want */
   /* Set a specific color for each brand */
   /* Facebook */
   /* Instagram */
   /* Twitter */
-}
-.bottom-content .first .first:hover {
-  border: 2px solid #6CB043;
+  /* Add a hover effect if you want */
+  /* Add a hover effect if you want */
+  /* Add a hover effect if you want */
 }
 @media (max-width: 500px) {
   .bottom-content .first {
     width: 100%;
     height: 190px;
+    margin: 5px auto;
+  }
+}
+@media (max-width: 500px) {
+  .bottom-content .first {
+    width: 100%;
+    height: 220px;
     margin: 5px auto;
   }
 }
@@ -599,9 +622,6 @@ nav button {
   align-items: center;
   flex-direction: row;
 }
-.bottom-content .first .fa:hover {
-  opacity: 0.7;
-}
 .bottom-content .first .fa-facebook {
   background: #3B5998;
   color: white;
@@ -613,6 +633,15 @@ nav button {
 .bottom-content .first .fa-twitter {
   background: #55ACEE;
   color: white;
+}
+.bottom-content .first .fa-facebook:hover {
+  opacity: 0.7;
+}
+.bottom-content .first .fa-instagram:hover {
+  opacity: 0.7;
+}
+.bottom-content .first .fa-twitter:hover {
+  opacity: 0.7;
 }
 .bottom-content .others {
   width: 220px;
@@ -633,11 +662,23 @@ nav button {
     margin: 10px auto;
   }
 }
+@media (max-width: 500px) {
+  .bottom-content .others {
+    width: 100%;
+    height: 250px;
+    margin: 10px auto;
+  }
+}
 .bottom-content .others h3 {
   padding: 5px;
   text-align: center;
 }
 @media (max-width: 500px) {
+  .bottom-content .others h3 {
+    padding: none;
+  }
+}
+@media (max-width: 800px) {
   .bottom-content .others h3 {
     padding: none;
   }
@@ -648,6 +689,11 @@ nav button {
   align-items: start;
   flex-direction: column;
   padding-left: 15px;
+}
+@media (max-width: 500px) {
+  .bottom-content .others .list {
+    padding-left: none;
+  }
 }
 @media (max-width: 500px) {
   .bottom-content .others .list {
@@ -671,6 +717,12 @@ footer {
 @media (max-width: 500px) {
   footer {
     height: 2rem;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 800px) {
+  footer {
+    height: 3rem;
     margin: 0 auto;
   }
 }
@@ -777,7 +829,7 @@ footer p {
   }
 }
 .articles {
-  margin-top: 20px;
+  margin: 20px 0;
 }
 .article {
   margin: 20px 10%;
@@ -816,6 +868,7 @@ footer p {
   bottom: 0;
   left: 50%;
   font-size: 16px;
+  text-shadow: 1px 1px black;
   color: #FAF3DD;
   cursor: pointer;
   transform: translate(-50%);

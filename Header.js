@@ -1,6 +1,6 @@
 let button = document.querySelector('.buttonOne');
 button.addEventListener('mouseover', function(event) {
-    button.style.border = '2px solid black';
+    button.style.border = '2px solid slategray';
 });
 
 button.addEventListener('mouseout', function(event) {
@@ -10,7 +10,7 @@ button.addEventListener('mouseout', function(event) {
 
 let buttonTwo = document.querySelector('.buttonTwo');
 buttonTwo.addEventListener('mouseover', function(event) {
-    buttonTwo.style.border = '2px solid black';
+    buttonTwo.style.border = '2px solid slategray';
 });
 
 buttonTwo.addEventListener('mouseout', function(event) {
@@ -22,7 +22,7 @@ buttonTwo.addEventListener('mouseout', function(event) {
 let navColor = document.querySelector('.first');
 navColor.addEventListener('mouseover', function(event) {
 
-    navColor.style.border = '2px solid black';
+    navColor.style.border = '2px solid slategray';
 
 });
 
@@ -33,7 +33,7 @@ navColor.addEventListener('mouseout', function(event) {
 
 let second = document.querySelector('.second');
 second.addEventListener('mouseover', function(event) {
-    second.style.border = '2px solid black';
+    second.style.border = '2px solid slategray';
 });
 
 second.addEventListener('mouseout', function(event) {
@@ -42,7 +42,7 @@ second.addEventListener('mouseout', function(event) {
 
 let third = document.querySelector('.third');
 third.addEventListener('mouseover', function(event) {
-    third.style.border = '2px solid black';
+    third.style.border = '2px solid slategray';
 });
 
 third.addEventListener('mouseout', function(event) {
@@ -51,7 +51,7 @@ third.addEventListener('mouseout', function(event) {
 
 let fourth = document.querySelector('.fourth');
 fourth.addEventListener('mouseover', function(event) {
-    fourth.style.border = '2px solid black';
+    fourth.style.border = '2px solid slategray';
 });
 
 fourth.addEventListener('mouseout', function(event) {
