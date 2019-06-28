@@ -412,6 +412,11 @@ nav button {
   padding: 2%;
   width: 60%;
 }
+@media (max-width: 500px) {
+  .tab-navigator .tab-content .content .contentinfo {
+    width: 100%;
+  }
+}
 .tab-navigator .tab-content .content .video {
   width: 50%;
 }
