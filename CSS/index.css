@@ -410,6 +410,7 @@ nav button {
 }
 .tab-navigator .tab-content .content .contentinfo {
   padding: 2%;
+  width: 60%;
 }
 .tab-navigator .tab-content .content .video {
   width: 50%;
