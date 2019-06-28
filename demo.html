@@ -1,64 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Crete+Round&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="./HeaderFooter.js " defer></script>
     <title>Request A Demo</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="wrapper">
-      <!-- nav bar -->
-      <nav>
-        <img src="Imgs/logo.jpg" class="logo" />
-        <h2>I'll Serve Soup</h2>
-        <div>
-          <a href="#">Login</a>
-          <button>Sign Up</button>
-        </div>
-      </nav>
-      <!-- end nav bar -->
+        <!-- nav bar -->
+        <nav>
+            <a href='https://ill-serve-soup.netlify.com'><img class='logo' src="./Imgs/logo.jpg"></a>
+            <a href='https://ill-serve-soup.netlify.com'>
+                <h1>I'll Serve Soup</h1>
+            </a>
+            <button onclick="window.location.href = 'https://ill-serve-soup.netlify.com';" class="buttonOne">Log In / Sign
+            Up</button>
+        </nav>
+
+        <!-- end nav bar -->
 
 
-      <div class="demo-top">
+        <div class="demo-top">
             <h2>Request A Live Demo</h2>
             <h4>Learn directly from the experts</h4>
             <button>Schedule Demo</button>
         </div>
 
-      <div class="aboutmainimg">
-        <img src="/Imgs/demo.jpg" alt ="Picture of a phone and tablet">
-      </div>
+        <div class="aboutmainimg">
+            <img src="/Imgs/demo.jpg" alt="Picture of a phone and tablet">
+        </div>
 
-      <!-- start demo content -->
+        <!-- start demo content -->
 
-<div class="demo-middle">
+        <div class="demo-middle">
 
-    <div class="demo-pitch">
-        <h3>Why Live?</h3>
-        <p>Our team is awesome and has some general skills and ability that would somehow benefit you to actually meet in person</p>
-        <p>With a live demo you'll gain:</p>
-        <ul>
-            <li>Customized set up</li>
-            <li>Live trouble shooting</li>
-            <li>Hands on walk throughs</li>
-        </ul>
-    </div>
+            <div class="demo-pitch">
+                <h3>Why Live?</h3>
+                <p>Our team is awesome and has some general skills and ability that would somehow benefit you to actually meet in person</p>
+                <p>With a live demo you'll gain:</p>
+                <ul>
+                    <li>Customized set up</li>
+                    <li>Live trouble shooting</li>
+                    <li>Hands on walk throughs</li>
+                </ul>
+            </div>
 
 
-        <form class="demo-form">
-            <h3>Request A Demo</h3>
+            <form class="demo-form">
+                <h3>Request A Demo</h3>
                 <div><input type="text" name="fullname" placeholder="Full Name"></div>
 
-                <div><input type="tel" name="phone" placeholder="Phone ###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                required></div>
+                <div><input type="tel" name="phone" placeholder="Phone ###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></div>
 
-                <div><input type="email" name="email" placeholder="Email"></div> 
-                
+                <div><input type="email" name="email" placeholder="Email"></div>
+
                 <select>
                     <option value="" disabled selected hidden>How did you hear about us?</option>
                     <option value="commercial">Commercial</option>
@@ -71,34 +73,82 @@
 
                 <button>Book Now</button>
             </form>
-</div>
+        </div>
 
-      <!-- end demo content -->
+        <!-- end demo content -->
 
-      <!-- start demo bottom -->
+        <!-- start demo bottom -->
 
-<div class="demo-bottom">
-                <h3>Need Immediate Assistance?</h3>
-        
-                <div class ="department">
-                    <h4>Customer Service</h4>
+        <div class="demo-bottom">
+            <h3>Need Immediate Assistance?</h3>
+
+            <div class="department">
+                <h4>Customer Service</h4>
                 <ul>
-                        <li class="phonelabel">Phone</li>
-                        <li class="phonenumber">555-555-5555</li>
-                        <li class="phonelabel">Toll-Free</li>
-                        <li class="phonenumber">1-800-555-5555</li>
+                    <li class="phonelabel">Phone</li>
+                    <li class="phonenumber">555-555-5555</li>
+                    <li class="phonelabel">Toll-Free</li>
+                    <li class="phonenumber">1-800-555-5555</li>
                 </ul>
-                </div>
-            <div class ="department">
+            </div>
+            <div class="department">
                 <h4>Technical Support</h4>
                 <ul>
-                        <li class="phonelabel">Phone</li>
-                        <li class="phonenumber">555-555-5555</li>
-                        <li class="phonelabel">Toll-Free</li>
-                        <li class="phonenumber">1-800-555-5555</li>
-                    </ul>
+                    <li class="phonelabel">Phone</li>
+                    <li class="phonenumber">555-555-5555</li>
+                    <li class="phonelabel">Toll-Free</li>
+                    <li class="phonenumber">1-800-555-5555</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bottom-content ">
+            <div class='first'>
+                <h2>I'll Serve Soup</h2> <br />
+                <div>
+                    <p>CONTACT US</p>
+                    <div class='fa'>
+                        <a href="#" class="fa fa-facebook "></a>
+                        <a href="#" class="fa fa-instagram "></a>
+                        <a href="#" class="fa fa-twitter "></a>
+                    </div>
                 </div>
-</div>
+            </div>
+            <div class='others second'>
+                <h3>Learn More</h3> <br />
+                <div class="list ">
+                    <a href="#" class="ab">Get Started</a>
+                    <a href="#" class="b">Tutorials</a>
+                    <a href="#" class="c">FAQ</a>
+                    <a href="#" class="d">Request a Demo</a>
+                </div>
+            </div>
+            <div class='others third'>
+                <h3>Dive Deep</h3> <br />
+                <div class="list ">
+                    <a href="#" class="e">Inventory Processing</a>
+                    <a href="#" class="f">Donation Assessment</a>
+                    <a href="#" class="g">Order Management</a>
+                    <a href="#" class="h">Volunteer Portal</a>
+                </div>
+            </div>
+            <div class='others fourth'>
+                <h3>Business</h3> <br />
+                <div class="list ">
+                    <a href="#" class="i">About Us</a>
+                    <a href="#" class="j">Data Security</a>
+                    <a href="#" class="k">Privacy Policy</a>
+                    <a href="#" class="l">Terms of Service</a>
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
+    <div>
+        <footer>
+            <p>© 2019 I'LL SERVE SOUP</p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js " integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin=" anonymous "></script>
+</body>
+
 </html>

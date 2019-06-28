@@ -215,7 +215,7 @@ nav .logo {
 }
 @media (max-width: 500px) {
   nav .logo {
-    width: 50%;
+    width: 100%;
     height: 250px;
   }
 }
@@ -246,6 +246,9 @@ nav button {
     font-size: 2rem;
     margin: 15px 0;
   }
+}
+nav a {
+  text-decoration: none;
 }
 .top-content {
   width: 100%;
@@ -596,7 +599,7 @@ nav button {
     margin: 5px auto;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .bottom-content .first {
     width: 100%;
     height: 220px;
@@ -662,7 +665,7 @@ nav button {
     margin: 10px auto;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .bottom-content .others {
     width: 100%;
     height: 250px;
@@ -695,7 +698,7 @@ nav button {
     padding-left: none;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .bottom-content .others .list {
     padding-left: none;
   }
